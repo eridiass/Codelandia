@@ -1,0 +1,111 @@
+         :root {
+            --blue: #3EA1DB;
+            --blue-dark: #574AE8;
+            --white: #FFF;
+            --title: #313131;
+            --text: #B6B6B6;
+        }
+        
+        @font-face {
+            font-family: inter;
+            src: url('../fontes/Inter-Medium.ttf'), url(../fontes/Inter-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: Lexend Deca;
+            src: url(../fontes/LexendDeca-Regular.ttf);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ebebeb;
+        }
+        
+        header {
+            height: 200px;
+            background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+            font-family: 'inter';
+        }
+        
+        #cabecalho {
+            width: 60%;
+            margin: 0 auto;
+            color: var(--white);
+        }
+        
+        #cabecalho-texto {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cabecalho-texto h1,
+        a {
+            margin-top: 40px;
+            font-size: 1.4em;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: var(--white);
+        }
+        
+        #cabecalho-busca {
+            margin-top: 50px;
+        }
+        
+        #cabecalho-busca input {
+            color: var(--white);
+            border-radius: 5px;
+            background: silver;
+            font-size: 1.1em;
+            padding: 15px;
+            width: 100%;
+            height: 55px;
+            margin-bottom: 5px;
+            border: none;
+        }
+        
+        #conteudo {
+            display: flex;
+            flex-direction: column;
+            max-width: 62.7%;
+            margin: 0 auto;
+        }
+        
+        .conteudo-principal {
+            align-content: space-between;
+            justify-content: center;
+            margin: 15px;
+            padding: 20px;
+            font-family: Lexend Deca;
+            background: #FFFFFF;
+        }
+        
+        .conteudo-principal:hover {
+            background: #C0C0C0;
+            border-radius: 25px;
+        }
+        
+        .container,
+        img {
+            padding-top: 3%;
+            float: right;
+        }
+        
+        .conteudo-principal p {
+            color: #717171;
+            padding: 7px;
+        }
+        
+        .conteudo-principal h3 {
+            color: #1A202C;
+            padding: 7px;
+        }
+        /*
+https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=139%3A51
+*/
